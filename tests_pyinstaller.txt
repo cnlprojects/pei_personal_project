@@ -1,0 +1,11 @@
+pyinstaller sea_snake_game_cnl.py -n SeaSnakeCNL --windowed --noconfirm --onefile --target-architecture arm --log-level DEBUG --clean 
+pyinstaller sea_snake_game_cnl.py -n SeaSnakeCNL --windowed --noconfirm --onefile --add-data 'bg01.jpg;.' --add-data 'bg02.jpg;.' --add-data 'bg03.png;.' --add-data 'bite.wav;.' --add-data 'bomb_exploding.wav;.' --add-data 'eating_chips.wav;.'
+pyinstaller sea_snake_game_cnl.py -n SeaSnakeCNL --windowed --noconfirm --onefile --add-data '/Users/anderson.lunz/Documents/Personal/carol/development/bg01.jpg;Resources' --add-data '/Users/anderson.lunz/Documents/Personal/carol/development/bg02.jpg;Resources' --add-data '/Users/anderson.lunz/Documents/Personal/carol/development/bg03.png;Resources' --add-data '/Users/anderson.lunz/Documents/Personal/carol/development/bite.wav;Resources' --add-data '/Users/anderson.lunz/Documents/Personal/carol/development/bomb_exploding.wav;Resources' --add-data '/Users/anderson.lunz/Documents/Personal/carol/development/eating_chips.wav;Resources'
+pyinstaller sea_snake_game_cnl.py -n SeaSnakeCNL --windowed --noconfirm --onefile --log-level=TRACE --clean --add-data 'bg01.jpg;.' --add-data 'bg02.jpg;.' --add-data 'bg03.png;.' --add-data 'bite.wav;.' --add-data 'bomb_exploding.wav;.' --add-data 'eating_chips.wav;.'
+pyinstaller sea_snake_game_cnl.py -n SeaSnakeCNL --windowed --noconfirm --onefile --log-level=TRACE --add-data "bg01.jpg;.;DATA" --add-data "bg02.jpg;." --add-data "bg03.png;." --add-data "bite.wav;." --add-data "bomb_exploding.wav;." --add-data "eating_chips.wav;." --target-architecture arm
+
+
+
+pyinstaller sea_snake_game.py --windowed --onefile --noconfirm --add-data "bg01.jpg;." --add-data "bg02.jpg;." --add-data "bg03.png;." --add-data "bite.wav;." --add-data "bomb_exploding.wav;." --add-data "eating_chips.wav;."
+
+pyinstaller sea_snake_game.py --windowed --onefile
